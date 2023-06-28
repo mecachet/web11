@@ -6,8 +6,8 @@
   font-family: "Helvetica Neue";
 }
 .header {
-  background-color: #0020f4;
-  padding-top: 27px;
+  background-color: #0022ff;
+  padding-top: 30px;
   padding-bottom: 270px;
 }
 .header-container {
@@ -31,7 +31,7 @@
   color: white;
   text-decoration: none;
 }
-#nav-contact {
+#nav-button {
   color: black;
   background-color: white;
   padding: 18px 36px;
@@ -45,10 +45,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .section-h1 {
-  text-align: center;
+  margin-left: 8%;
   margin-bottom: 60px;
   font-size: 28px;
   font-weight: bold;
@@ -57,10 +57,12 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .section-p {
   align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
 }
 .section-p-text {
@@ -72,7 +74,8 @@
 .footer {
   background-color: #0022ff;
 }
-.footer-content {
+.footer-items {
+  max-width: 1220px;
   width: 100%;
   margin: 0 auto;
 }
@@ -95,7 +98,7 @@
 }
 .heart {
   position: relative;
-  bottom: 10px;
+  top: 9px;
 }
 .footer-flex-3 {
   display: flex;
@@ -104,9 +107,14 @@
   padding-bottom: 40px;
 }
 .footer-p {
-  font-size: px;
+  font-size: 16px;
   margin-bottom: 60px;
   max-width: 463px;
+}
+.map {
+  border-radius: 20px;
+  margin-bottom: 60px;
+  max-width: 460px;
 }
 .button-1 {
   background-color: #0020f4;
@@ -146,13 +154,10 @@
 }
 .input {
   display: block;
+  border-bottom: 1px solid rgb(152, 188, 255);
   margin-bottom: 40px;
   width: 460px;
   height: 40px;
-}
-#text {
-  height: 140px;
-  margin-bottom: 50px;
 }
 .button-flex {
   display: flex;
@@ -172,8 +177,9 @@
 .smartweb-image {
   margin-left: 30px;
 }
-@media {
+@media (max-width: 1024px) {
   .header-container {
+    max-width: fit-content;
     display: flex;
     align-items: center;
   }
